@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" >
+        var userInput = prompt("Script Prompt: \n\nEnter radius:");
+
+        a = Math.PI*(Math.pow(userInput,2));
+        s = Math.PI*4*(Math.pow(userInput,2));
+        v = Math.PI*Math.pow(userInput,3)*4/3
+
+        if(userInput != null) {
+            document.write("<h1>Calculation Result</h1>");
+            document.write(
+                    "<table border=1> " +
+                        "<tr><td>Circle Area = "+a+"</td></tr> " +
+                        "<tr><td>Sphere Area = "+s+"</td></tr> " +
+                        "<tr><td>Sphere Volume = "+v+"</td></tr> " +
+                    "</table>");
+        }
+        document.write("<p>Click Refresh (or Reload) to run the script again</p>")
+
+
+    </script>
+</body>
+</html>

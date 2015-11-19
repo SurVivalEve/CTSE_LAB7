@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Mark Six Result</h1>
+    <table border="1">
+        <tr>
+            <td>Subscript</td>
+            <td>Value</td>
+        </tr>
+    <script type="text/javascript">
+        var mark_six = new Array();
+        var ball = new Array();
+        var count = 0;
+        var seed;
+
+        while(count!=6){
+            seed = Math.round(Math.random()*48)+1;
+            if(ball[seed]!='*'){
+                ball[seed]='*'
+                count++;
+            }
+        }
+
+        for(i=1;i<=49;i++){
+            if(ball[i]=='*') {
+                mark_six.push(i);
+            }
+        }
+
+        for(i=0;i<6;i++) {
+            document.write("<tr>" +
+                    "<td>"+i+"</td>" +
+                    "<td>"+mark_six[i]+"</td>" +
+                    "</tr>")
+        }
+
+
+    </script>
+    </table>
+</body>
+</html>
